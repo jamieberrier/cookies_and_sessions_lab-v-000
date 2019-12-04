@@ -8,6 +8,6 @@ class ProductsController < ApplicationController
     cart << product
     session[:cart] = cart
 
-    redirect_to 'index'
+    render 'index'
   end
 end
