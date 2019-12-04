@@ -7,5 +7,7 @@ class ProductsController < ApplicationController
     product = params[:product]
     cart << product
     session[:cart] = cart
+
+    redirect_to 'index'
   end
 end
